@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect } from 'react';
+
+import AppNavigator from './src/navigation/AppNavigator';
+import { NotificationService } from './src/services/notifications/NotificationService';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  useEffect(() => {
+    const initializeNotifications = async () => {
+      try {
+        const permissionsGranted =
+          await NotificationService.configure();
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+        if (permissionsGranted) {
+          console.log('Notificaciones habilitadas correctamente');
+        } else {
+          console.log('El permiso de notificaciones no fue concedido');
+        }
+      } catch (error) {
+        console.error(
+          'Error al iniciar las notificaciones:',
+          error
+        );
+      }
+    };
+
+    initializeNotifications();
+  }, []);
+
+  return <AppNavigator />;
+}
