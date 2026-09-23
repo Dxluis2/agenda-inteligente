@@ -47,3 +47,12 @@ Contiene las definiciones de tipos utilizadas por TypeScript para organizar la i
 ## Objetivo de la organización
 
 La estructura permite mantener el código separado por responsabilidades, facilitando la búsqueda de archivos, el mantenimiento del proyecto y el trabajo colaborativo entre los integrantes del equipo.
+
+## Flujo general del proyecto
+
+La agenda inteligente permite organizar y consultar actividades escolares. 
+El proyecto está estructurado para facilitar el mantenimiento del código y 
+la integración de nuevas funcionalidades mediante ramas de Git.
+
+Los cambios importantes se desarrollan en ramas independientes y posteriormente
+se integran a la rama principal mediante Pull Requests.
