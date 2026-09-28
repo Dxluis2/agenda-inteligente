@@ -32,3 +32,6 @@
 
 **Resultado esperado:** La actividad registrada debe mostrarse correctamente.
 
+## Observación adicional
+
+Las validaciones permiten comprobar que los datos ingresados por el usuario sean correctos antes de registrar una actividad.
