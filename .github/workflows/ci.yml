@@ -25,5 +25,8 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
+      - name: Mostrar versión de Node.js
+        run: node --version
+
       - name: Verificar TypeScript
         run: npm run typecheck
