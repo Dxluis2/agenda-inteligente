@@ -30,3 +30,12 @@ jobs:
 
       - name: Verificar TypeScript
         run: npm run typecheck
+
+      - name: Crear artefacto
+        run: zip -r agenda-inteligente.zip . -x "node_modules/*" ".git/*"
+
+      - name: Subir artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: agenda-inteligente
+          path: agenda-inteligente.zip
