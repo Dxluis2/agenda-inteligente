@@ -1,54 +1,34 @@
-\# Estructura de carpetas del proyecto
+# Pruebas de la Agenda Inteligente
 
+## Prueba 1: Agregar actividad
 
+**Objetivo:** comprobar que una actividad pueda registrarse correctamente.
 
-La Agenda Inteligente está organizada en diferentes archivos y carpetas para facilitar su mantenimiento.
+**Pasos:**
+1. Abrir la aplicación.
+2. Escribir una actividad.
+3. Presionar el botón para agregarla.
 
+**Resultado esperado:** La actividad debe aparecer en la lista.
 
+## Prueba 2: Campo vacío
 
-\## Archivos principales
+**Objetivo:** comprobar el comportamiento cuando no se introduce una actividad.
 
+**Pasos:**
+1. Abrir la aplicación.
+2. Dejar vacío el campo.
+3. Presionar el botón para agregar.
 
+**Resultado esperado:** El sistema debe solicitar que se ingrese una actividad.
 
-\### App.tsx
+## Prueba 3: Visualización
 
+**Objetivo:** comprobar que las actividades registradas sean visibles.
 
+**Pasos:**
+1. Registrar una actividad.
+2. Observar la lista.
 
-Contiene la interfaz principal y la lógica de la aplicación.
-
-
-
-\### index.ts
-
-
-
-Es el archivo utilizado como punto de entrada del proyecto.
-
-
-
-\## Carpeta assets
-
-
-
-Contiene recursos gráficos utilizados por la aplicación, como imágenes e iconos.
-
-
-
-\## Carpeta docs
-
-
-
-Contiene la documentación relacionada con el proyecto.
-
-
-
-\## Archivos de configuración
-
-
-
-El proyecto también contiene archivos de configuración necesarios para ejecutar y administrar la aplicación.
-
-
-
-Esta estructura permite mantener organizados los diferentes elementos del proyecto y facilita su mantenimiento.
+**Resultado esperado:** La actividad registrada debe mostrarse correctamente.
 
