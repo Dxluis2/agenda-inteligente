@@ -28,5 +28,8 @@ jobs:
       - name: Mostrar versión de Node.js
         run: node --version
 
+      - name: Verificar CI en Pull Request
+        run: echo "CI ejecutándose correctamente en Pull Request"
+
       - name: Verificar TypeScript
         run: npm run typecheck
